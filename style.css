@@ -19,4 +19,16 @@
     --color-primary: hsl(232, 15%, 19%);
     --color-primary-m-l: hsl(232, 15%, 19%, 0.55);
     --color-primary-m-d: hsl(232, 15%, 19%, 0.85);
+
+    --color-secondary: rgb(255, 170, 6);
+    --color-secondary-m-light: rgb(255, 170, 6, 0.55);
+    --color-secondary-m-dark: rgb(255, 170, 6, 0.85);
+
+    --color-tertiary: #1a508b;
+    --color-tertiary-m-light: hsl(221, 68%, 32%, 0.55);
+    --color-tertiary-m-dark: hsl(221, 68%, 32%, 0.85);
+
+    --color-secondary: rgb(231, 231, 230);
+    --color-secondary-m-light: rgb(231, 231, 230, 0.55);
+    --color-secondary-m-dark: rgb(231, 231, 230, 0.85);
 }
