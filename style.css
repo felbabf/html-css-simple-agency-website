@@ -8,6 +8,7 @@
 
 /* -------------------------------------------------------------------------- General Style */
 :root {
+
     /* Base font size for the entire website */
     font-size: 10px;
 
@@ -21,14 +22,21 @@
     --color-primary-m-d: hsl(232, 15%, 19%, 0.85);
 
     --color-secondary: rgb(255, 170, 6);
-    --color-secondary-m-light: rgb(255, 170, 6, 0.55);
-    --color-secondary-m-dark: rgb(255, 170, 6, 0.85);
+    --color-secondary-m-l: rgb(255, 170, 6, 0.55);
+    --color-secondary-m-d: rgb(255, 170, 6, 0.85);
 
     --color-tertiary: #1a508b;
-    --color-tertiary-m-light: hsl(221, 68%, 32%, 0.55);
-    --color-tertiary-m-dark: hsl(221, 68%, 32%, 0.85);
+    --color-tertiary-m-l: hsl(221, 68%, 32%, 0.55);
+    --color-tertiary-m-d: hsl(221, 68%, 32%, 0.85);
 
     --color-secondary: rgb(231, 231, 230);
-    --color-secondary-m-light: rgb(231, 231, 230, 0.55);
-    --color-secondary-m-dark: rgb(231, 231, 230, 0.85);
+    --color-secondary-m-l: rgb(231, 231, 230, 0.55);
+    --color-secondary-m-d: rgb(231, 231, 230, 0.85);
+
+    /* ------------------------------------------ Padding */
+
+    --padding-xl: calc(2rem + 6vh) + calc(2rem + 6vw);
+    --padding-l: calc(3rem + 4vh) + calc(3rem + 4vw);
+    --padding-m: calc(2rem + 2vh) + calc(2rem + 2vw);
+    --padding-s: calc(1rem + 1vh) + calc(1rem + 1vw);
 }
