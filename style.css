@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 
-/* -------------------------------------------------------------------------- General Style */
+/* ------------------------------------------------------------------- General Style */
 :root {
 
     /* Base font size for the entire website */
     font-size: 10px;
 
-    /* ------------------------------------- Colors */
+    /* ------------------------------------------------------------------- Colors */
     /* m = modified */
     /* l = light */
     /* d = dark */
@@ -29,25 +29,25 @@
     --color-tertiary-m-l: hsl(221, 68%, 32%, 0.55);
     --color-tertiary-m-d: hsl(221, 68%, 32%, 0.85);
 
-    --color-secondary: rgb(231, 231, 230);
-    --color-secondary-m-l: rgb(231, 231, 230, 0.55);
-    --color-secondary-m-d: rgb(231, 231, 230, 0.85);
+    --color-quaternary: rgb(231, 231, 230);
+    --color-quaternary-m-l: rgb(231, 231, 230, 0.55);
+    --color-quaternary-m-d: rgb(231, 231, 230, 0.85);
 
-    /* ------------------------------------------ Padding */
+    /* ------------------------------------------------------------------- Padding */
 
     --padding-xl: calc(2rem + 6vh) + calc(2rem + 6vw);
     --padding-l: calc(3rem + 4vh) + calc(3rem + 4vw);
     --padding-m: calc(2rem + 2vh) + calc(2rem + 2vw);
     --padding-s: calc(1rem + 1vh) + calc(1rem + 1vw);
 
-    /* ------------------------------------------ Font size */
+    /* ------------------------------------------------------------------- Font size */
 
     --font-size-l: calc(1.5rem + 2vw);
     --font-size-m: calc(1rem + 1.5vw);
     --font-size-s: calc(1rem + 1vw);
     --font-size-xs: calc(0.5rem + 0.8vw);
 
-    /* ------------------------------------------- Font Family */
+    /*  ------------------------------------------------------------------- Font Family */
 
     --font-family-main: "Fredoka", sans-serif;
     --font-family-sub: "Poppins", sans-serif;
@@ -60,5 +60,64 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: [container-start] 1fr [center-start] repeat(10, [col-start] minmax(min-content, 11rem) [col-end]) [center-end] 1fr [container-end];
+
+    grid-template-rows: repeat(6, min-content);
+    background-color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-quaternary);
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ------------------------------------------------------------------- Header */
+#main-header {
+    height: 250px;
+    color: white;
+    background-color: var(--color-secondary);
+    grid-column: center-start / center-end;
+}
+
+
+/* ------------------------------------------------------------------- Hero */
+.hero {
+    height: 400px;
+    color: white;
+    background-color: var(--color-tertiary);
+    grid-column: center-start / center-end;
+}
+
+
+/* ------------------------------------------------------------------- Feauters */
+.feauters {
+    height: 400px;
+    background-color: var(--color-quaternary);
+    grid-column: center-start / center-end;
+}
+
+/* ------------------------------------------------------------------- Diversify */
+.diversify {
+    height: 400px;
+    background-color: var(--color-secondary);
+    grid-column: center-start / center-end;
+}
+
+/* ------------------------------------------------------------------- Testimonials */
+.testimonials {
+    height: 400px;
+    background-color: var(--color-tertiary);
+    grid-column: center-start / center-end;
+}
+
+/* ------------------------------------------------------------------- Footer */
+.footer {
+    height: 400px;
+    background-color: var(--color-quaternary);
+    grid-column: center-start / center-end;
 }
