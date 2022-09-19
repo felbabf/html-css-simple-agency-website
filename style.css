@@ -78,10 +78,11 @@ li {
 
 /* ------------------------------------------------------------------- Header */
 #main-header {
-    height: 250px;
-    color: white;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -119,5 +120,5 @@ li {
 .footer {
     height: 400px;
     background-color: var(--color-quaternary);
-    grid-column: center-start / center-end;
+    grid-column: container-start / center-end;
 }
