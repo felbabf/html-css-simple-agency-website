@@ -80,6 +80,7 @@ li {
 #main-header {
     background-color: var(--color-primary);
     grid-column: center-start / center-end;
+    padding: var(--padding-s);
 
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,60 @@ li {
     position: relative;
 }
 
+/* Logo */
+.main-header__logo h2 {
+    font-size: 3rem;
+    color: var(--color-quaternary);
+    font-family: var(--font-family-main);    
+}
+.main-header__logo span {
+    color: var(--color-secondary);
+}
+
+/* Nav */
+.main-header__nav {
+    width: 80%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    z-index: 1;
+}
+
+.main-header__nav--links {
+    display: flex;
+    gap: calc(0.5rem + 1vw);
+    align-items: center;
+}
+
+.main-header__nav--links a {
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.main-header__nav--links a:hover {
+    background-color: var(--color-secondary);
+}
+
+.main-header__nav--registration {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-header__nav--registration a {
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.main-header__nav--registration a:nth-child(2) {
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+}
 
 /* ------------------------------------------------------------------- Hero */
 .hero {
@@ -96,7 +151,6 @@ li {
     background-color: var(--color-tertiary);
     grid-column: center-start / center-end;
 }
-
 
 /* ------------------------------------------------------------------- Feauters */
 .feauters {
